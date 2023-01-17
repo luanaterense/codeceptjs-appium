@@ -23,7 +23,6 @@ export const config: CodeceptJS.MainConfig = {
   },
   mocha: {
     reporterOptions: {
-      mochaFile: "output/result.xml",
       reportDir: "output",
     }
   },
