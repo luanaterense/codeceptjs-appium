@@ -15,7 +15,7 @@ export const config: CodeceptJS.MainConfig = {
       app: 'C:/Users/luana.terense/Documents/Projetos/appsqazando/app-release.apk',
       device: 'Emulator5554',
       platformVersion: '10',
-        }
+    }
   },
   include: {
     I: './steps_file',
@@ -28,11 +28,11 @@ export const config: CodeceptJS.MainConfig = {
   },
   name: 'POCAppiumCodeceptJS',
   fullPromiseBased: false,
-  plugins:{
-    stepByStepReport:{
+  plugins: {
+    stepByStepReport: {
       enabled: true,
     },
-    allure:{
+    allure: {
       enabled: true,
     }
   }
