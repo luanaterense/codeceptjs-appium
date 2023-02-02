@@ -7,7 +7,7 @@ import { setHeadlessWhen, setCommonPlugins } from '@codeceptjs/configure';
 setCommonPlugins();
 
 export const config: CodeceptJS.MainConfig = {
-  tests: './steps/*_test.js',
+  tests: './codeceptjs/steps/*_test.js',
   output: './output',
   helpers: {
     Appium: {
@@ -20,8 +20,8 @@ export const config: CodeceptJS.MainConfig = {
   },
   include: {
     I: './steps_file',
-    login_page: './pages/login_page.js',
-    login_elements: './elements/login_elements.js'
+    login_page: './codeceptjs/pages/login_page.js',
+    login_elements: './codeceptjs/elements/login_elements.js'
   },
   mocha: {
     reporterOptions: {
