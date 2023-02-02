@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "npx codeceptjs run",
+    "test": "npx codeceptjs run --plugin allure",
     "android": "npx codeceptjs run '{\"helpers\": {\"Appium\": { \"platform\": \"Android\", \"app\": \"/C:/Users/luana.terense/Documents/Projetos/appsqazando/app-release.apk\", \"desiredCapabilities\": { \"appPackage\": \"com.qazandoapp\", \"appActivity\": \"MainActivity\", \"deviceName\": \"emulator5554\", \"platformVersion\": \"10\" }}}} ' "
   },
   "author": "",

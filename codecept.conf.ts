@@ -15,11 +15,13 @@ export const config: CodeceptJS.MainConfig = {
       app: 'C:/Users/luana.terense/Documents/Projetos/appsqazando/app-release.apk',
       device: 'Emulator5554',
       platformVersion: '10',
+      automationName: 'UiAutomator2'
     }
   },
   include: {
     I: './steps_file',
     login_page: './pages/login_page.js',
+    login_elements: './elements/login_elements.js'
   },
   mocha: {
     reporterOptions: {
